@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>michES XOXO menu</title>
+    <link rel="stylesheet" href="CSS/MENU.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/LOGO_MICHES.png" />
+    <style>
+        /* Barra de navegación con efecto neón */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #111;
+            padding: 15px 0;
+            border-bottom: 2px solid #0ff;
+        }
+
+        .nav-bar a {
+            position: relative;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            color: #0ff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 2px solid #0ff;
+            border-radius: 8px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+        }
+
+        .nav-bar a:hover {
+            background-color: #0ff;
+            color: #111;
+            box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <!-- Header con logo animado -->
+        <header class="menu-header">
+            <div class="logo-container">
+                <img src="IMAGES/LOGO_MICHES.png" alt="Logo michES XOXO" class="menu-logo">
+                <h1>michES XOXO<span>Menu</span></h1>
+            </div>
+            <div class="cart-icon" id="cart-toggle">
+                <i class="fas fa-cocktail"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </header>
+
+        <!-- Barra de navegación superior -->
+        <nav class="nav-bar">
+            <a href="MESA.html"><i class="fas fa-chair"></i> Mesa</a>
+            <a href="INVENTARIO.html"><i class="fas fa-boxes"></i> Inventario</a>
+            <a href="VENTA_DIA.html"><i class="fas fa-cash-register"></i> Venta Día</a>
+            <a href="BARRA.html"><i class="fas fa-beer"></i> Barra</a>
+            <a href="PRODUCTOS.html"><i class="fas fa-beer"></i> Analisis de Venta</a>
+            <a href="REPORTE_MENSUAL.html"><i class="fas fa-beer"></i>Reporte de ventas por filtro</a>
+
+
+        </nav>
+
+        <!-- Filtros de categorías -->
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">TODO</button>
+            <button class="filter-btn" data-category="cervezas">CERVEZAS</button>
+            <button class="filter-btn" data-category="drinks">DRINKS</button>
+            <button class="filter-btn" data-category="miches">MICHES</button>
+            <button class="filter-btn" data-category="azulitos">AZULITOS</button>
+            <button class="filter-btn" data-category="tritones">TRITONES</button>
+            <button class="filter-btn" data-category="alimentos">ALIMENTOS</button>
+            <button class="filter-btn" data-category="promos">PROMOS</button>
+        </div>
+
+        <!-- Grid de productos -->
+        <div class="products-grid" id="products-grid">
+            <!-- Los productos se cargarán dinámicamente -->
+        </div>
+
+        <!-- Carrito de compras -->
+        <div class="cart-overlay" id="cart-overlay">
+            <div class="cart-container">
+                <div class="cart-header">
+                    <h2><i class="fas fa-cocktail"></i> TU PEDIDO</h2>
+                    <button class="close-cart" id="close-cart">&times;</button>
+                </div>
+                <div class="cart-items" id="cart-items">
+                    <!-- Los items del carrito se cargarán aquí -->
+                </div>
+                <div class="cart-total">
+                    <span>TOTAL:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">CONFIRMAR PEDIDO</button>
+            </div>
+        </div>
+
+        <!-- Efecto de confeti oculto -->
+        <canvas id="confetti-canvas"></canvas>
+    </div>
+
+    <script src="JAVA/MENU.js"></script>
+</body>
+</html>

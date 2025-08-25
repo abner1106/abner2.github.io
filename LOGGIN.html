@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Miches - Login</title>
+    <link rel="stylesheet" href="CSS/LOGGIN.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/LOGO_MICHES.png" />
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container animate__animated animate__bounceIn">
+        </div>
+
+        <form method="POST" class="login-form animate__animated animate__fadeInUp">
+            <div class="avatar-container">
+                <img src="IMAGES/LOGO_MICHES.png" alt="Empleado" class="avatar">
+            </div>
+            
+            <h2>Iniciar Sesión</h2>
+            
+            <?php if (isset($error)): ?>
+                <div class="error-message animate__animated animate__shakeX">
+                    <?php echo $error; ?>
+                </div>
+            <?php endif; ?>
+            
+           <div class="input-group">
+                <input type="text" name="usuario" required>
+                <label>Usuario</label>
+                <span class="bar"></span>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" name="contrasena" required>
+                <label>Contraseña</label>
+                <span class="bar"></span>
+            </div>
+            
+            <a href="DASHBOARD/MENU.html" class="btn-login">
+    <span>Ingresar</span>
+    <div class="liquid"></div>
+</a>
+
+        </form>
+    </div>
+
+    <script src="JAVA/LOGGIN.js"></script>
+</body>
+</html>

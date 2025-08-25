@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Mesa - Las Miches XOXO</title>
+    <link rel="stylesheet" href="CSS/MESAS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-placeholder">
+                <img src="IMAGES/LOGO_MICHES.png" alt="Las Miches XOXO" class="logo" id="logo">
+                <h1 class="title">SELECCIÓN <span class="neon-text">DE MESA</span></h1>
+            </div>
+            <div class="header-info">
+                <div class="info-box">
+                    <span class="info-label">MESERO:</span>
+                    <span class="info-value" id="mesero-name">Nombre Mesero</span>
+                </div>
+                <div class="info-box">
+                    <span class="info-label">HORA:</span>
+                    <span class="info-value" id="current-time">--:--</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="mesas-container">
+            <div class="mesas-grid" id="mesas-grid">
+                <!-- Mesas del 1 al 13 aparecerán aquí -->
+            </div>
+            
+            <div class="cuenta-option">
+                <div class="switch-container">
+                    <span class="switch-label">Cuenta Individual</span>
+                    <label class="switch">
+                        <input type="checkbox" id="cuenta-unica">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="switch-label">Dividir Cuenta</span>
+                </div>
+                <p class="info-text">Activa "Dividir Cuenta" para separar por personas</p>
+            </div>
+        </main>
+
+        <div class="action-buttons">
+            <button class="btn btn-cancel" id="cancel-action">
+                <i class="fas fa-times"></i> Cancelar
+            </button>
+            <button class="btn btn-confirm" id="confirm-action">
+                <i class="fas fa-check"></i> Continuar a Orden
+            </button>
+        </div>
+    </div>
+
+    <script src="JAVA/MESAS.js"></script>
+</body>
+</html>

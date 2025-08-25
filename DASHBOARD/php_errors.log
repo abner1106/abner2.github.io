@@ -1,0 +1,963 @@
+[08-Aug-2025 06:06:30 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 49
+[08-Aug-2025 06:06:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php:49
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 49
+[08-Aug-2025 06:08:18 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 49
+[08-Aug-2025 06:08:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php:49
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 49
+[08-Aug-2025 06:09:39 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 49
+[08-Aug-2025 06:09:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php:49
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 49
+[08-Aug-2025 06:10:47 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:10:47 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 221
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:10:47 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:10:47 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:10:47 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:10:47 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:10:47 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:10:48 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:10:48 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 221
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:10:48 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:10:48 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:10:48 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:10:48 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:10:48 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:10:48 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:10:48 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 221
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:10:48 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:10:48 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:10:48 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:10:48 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:10:48 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:10:49 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:10:49 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 221
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:10:49 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:10:49 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:10:49 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:10:49 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:10:49 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:11:03 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:11:03 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 222
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+    [sec-ch-ua] => "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,es-MX;q=0.5
+    [Cookie] => PHPSESSID=uhs6fb32q5f14qv68t17o0tc6k
+)
+
+[08-Aug-2025 06:11:03 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"efectivo","items":[{"id_producto":3,"nombre_producto":"Corona Lata","cantidad":1,"precio_unitario":35,"notas":""}],"total":35,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:11:03 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => efectivo
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 3
+                    [nombre_producto] => Corona Lata
+                    [cantidad] => 1
+                    [precio_unitario] => 35
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 35
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:11:03 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:11:03 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:11:03 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:16:13 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:16:13 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 222
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:16:13 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"efectivo","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:16:13 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => efectivo
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:16:13 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:16:13 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:16:13 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:16:14 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:16:14 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 222
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:16:14 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"efectivo","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:16:14 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => efectivo
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:16:14 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:16:14 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:16:14 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:16:38 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:16:38 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 221
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:16:38 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:16:38 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:16:38 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:16:38 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:16:38 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:16:38 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:16:38 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 221
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:16:38 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""}],"total":80,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:16:38 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 80
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:16:38 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:16:38 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:16:38 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:17:00 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:17:00 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => 192.168.1.67
+    [Connection] => keep-alive
+    [Content-Length] => 231
+    [User-Agent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36 OPR/88.0.0.0
+    [Content-Type] => application/json
+    [Accept] => */*
+    [Origin] => http://192.168.1.67
+    [Referer] => http://192.168.1.67/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate
+    [Accept-Language] => es-US,es;q=0.9,en-us;q=0.8,en;q=0.7
+    [Cookie] => PHPSESSID=jlu2v3r9m0la3kajfgto4aadcq
+)
+
+[08-Aug-2025 06:17:00 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":1,"nombre_producto":"Modelo Especial Media","cantidad":1,"precio_unitario":40,"notas":""}],"total":40,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:17:00 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 1
+                    [nombre_producto] => Modelo Especial Media
+                    [cantidad] => 1
+                    [precio_unitario] => 40
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 40
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:17:00 Europe/Berlin] PHP Warning:  Undefined variable $conn in C:\xampp\htdocs\RESTAURANT-BAR\DASHBOARD\GUARDAR_VENTA.php on line 60
+[08-Aug-2025 06:17:00 Europe/Berlin] Exception: No se pudo conectar a la base de datos
+[08-Aug-2025 06:17:00 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:20:26 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:20:26 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 318
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:20:26 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"efectivo","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""},{"id_producto":3,"nombre_producto":"Corona Lata","cantidad":1,"precio_unitario":35,"notas":""}],"total":115,"concepto":"Pedido de 2 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:20:26 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => efectivo
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+            [1] => Array
+                (
+                    [id_producto] => 3
+                    [nombre_producto] => Corona Lata
+                    [cantidad] => 1
+                    [precio_unitario] => 35
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 115
+    [concepto] => Pedido de 2 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:20:26 Europe/Berlin] Transacción iniciada
+[08-Aug-2025 06:20:26 Europe/Berlin] Preparando query: 
+        INSERT INTO ventas (
+            id_empleado, 
+            id_cliente, 
+            total, 
+            concepto, 
+            detalles, 
+            metodo_pago,
+            fecha
+        ) VALUES (
+            :id_empleado, 
+            :id_cliente, 
+            :total, 
+            :concepto, 
+            :detalles, 
+            :metodo_pago,
+            NOW()
+        )
+[08-Aug-2025 06:20:26 Europe/Berlin] Ejecutando venta con parámetros: Array
+(
+    [:id_empleado] => 1
+    [:id_cliente] => 
+    [:total] => 115
+    [:concepto] => Pedido de 2 productos
+    [:detalles] => Pedido desde la tienda online
+    [:metodo_pago] => efectivo
+)
+
+[08-Aug-2025 06:20:26 Europe/Berlin] Venta insertada con ID: 1
+[08-Aug-2025 06:20:26 Europe/Berlin] Preparando query de detalles: 
+        INSERT INTO detalles_venta (
+            id_venta, 
+            id_producto, 
+            nombre_producto, 
+            cantidad, 
+            precio_unitario, 
+            notas
+        ) VALUES (
+            :id_venta, 
+            :id_producto, 
+            :nombre_producto, 
+            :cantidad, 
+            :precio_unitario, 
+            :notas
+        )
+[08-Aug-2025 06:20:26 Europe/Berlin] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'las_miches.detalles_venta' doesn't exist
+[08-Aug-2025 06:20:26 Europe/Berlin] Realizando rollback...
+[08-Aug-2025 06:20:26 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:20:35 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:20:35 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 318
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:20:35 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"efectivo","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""},{"id_producto":3,"nombre_producto":"Corona Lata","cantidad":1,"precio_unitario":35,"notas":""}],"total":115,"concepto":"Pedido de 2 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:20:35 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => efectivo
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+            [1] => Array
+                (
+                    [id_producto] => 3
+                    [nombre_producto] => Corona Lata
+                    [cantidad] => 1
+                    [precio_unitario] => 35
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 115
+    [concepto] => Pedido de 2 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:20:35 Europe/Berlin] Transacción iniciada
+[08-Aug-2025 06:20:35 Europe/Berlin] Preparando query: 
+        INSERT INTO ventas (
+            id_empleado, 
+            id_cliente, 
+            total, 
+            concepto, 
+            detalles, 
+            metodo_pago,
+            fecha
+        ) VALUES (
+            :id_empleado, 
+            :id_cliente, 
+            :total, 
+            :concepto, 
+            :detalles, 
+            :metodo_pago,
+            NOW()
+        )
+[08-Aug-2025 06:20:35 Europe/Berlin] Ejecutando venta con parámetros: Array
+(
+    [:id_empleado] => 1
+    [:id_cliente] => 
+    [:total] => 115
+    [:concepto] => Pedido de 2 productos
+    [:detalles] => Pedido desde la tienda online
+    [:metodo_pago] => efectivo
+)
+
+[08-Aug-2025 06:20:35 Europe/Berlin] Venta insertada con ID: 2
+[08-Aug-2025 06:20:35 Europe/Berlin] Preparando query de detalles: 
+        INSERT INTO detalles_venta (
+            id_venta, 
+            id_producto, 
+            nombre_producto, 
+            cantidad, 
+            precio_unitario, 
+            notas
+        ) VALUES (
+            :id_venta, 
+            :id_producto, 
+            :nombre_producto, 
+            :cantidad, 
+            :precio_unitario, 
+            :notas
+        )
+[08-Aug-2025 06:20:35 Europe/Berlin] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'las_miches.detalles_venta' doesn't exist
+[08-Aug-2025 06:20:35 Europe/Berlin] Realizando rollback...
+[08-Aug-2025 06:20:35 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:20:53 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:20:53 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => 192.168.1.67
+    [Connection] => keep-alive
+    [Content-Length] => 232
+    [User-Agent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36 OPR/88.0.0.0
+    [Content-Type] => application/json
+    [Accept] => */*
+    [Origin] => http://192.168.1.67
+    [Referer] => http://192.168.1.67/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate
+    [Accept-Language] => es-US,es;q=0.9,en-us;q=0.8,en;q=0.7
+    [Cookie] => PHPSESSID=jlu2v3r9m0la3kajfgto4aadcq
+)
+
+[08-Aug-2025 06:20:53 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"efectivo","items":[{"id_producto":1,"nombre_producto":"Modelo Especial Media","cantidad":1,"precio_unitario":40,"notas":""}],"total":40,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:20:53 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => efectivo
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 1
+                    [nombre_producto] => Modelo Especial Media
+                    [cantidad] => 1
+                    [precio_unitario] => 40
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 40
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:20:53 Europe/Berlin] Transacción iniciada
+[08-Aug-2025 06:20:53 Europe/Berlin] Preparando query: 
+        INSERT INTO ventas (
+            id_empleado, 
+            id_cliente, 
+            total, 
+            concepto, 
+            detalles, 
+            metodo_pago,
+            fecha
+        ) VALUES (
+            :id_empleado, 
+            :id_cliente, 
+            :total, 
+            :concepto, 
+            :detalles, 
+            :metodo_pago,
+            NOW()
+        )
+[08-Aug-2025 06:20:53 Europe/Berlin] Ejecutando venta con parámetros: Array
+(
+    [:id_empleado] => 1
+    [:id_cliente] => 
+    [:total] => 40
+    [:concepto] => Pedido de 1 productos
+    [:detalles] => Pedido desde la tienda online
+    [:metodo_pago] => efectivo
+)
+
+[08-Aug-2025 06:20:53 Europe/Berlin] Venta insertada con ID: 3
+[08-Aug-2025 06:20:53 Europe/Berlin] Preparando query de detalles: 
+        INSERT INTO detalles_venta (
+            id_venta, 
+            id_producto, 
+            nombre_producto, 
+            cantidad, 
+            precio_unitario, 
+            notas
+        ) VALUES (
+            :id_venta, 
+            :id_producto, 
+            :nombre_producto, 
+            :cantidad, 
+            :precio_unitario, 
+            :notas
+        )
+[08-Aug-2025 06:20:53 Europe/Berlin] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'las_miches.detalles_venta' doesn't exist
+[08-Aug-2025 06:20:53 Europe/Berlin] Realizando rollback...
+[08-Aug-2025 06:20:53 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:21:01 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:21:01 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => 192.168.1.67
+    [Connection] => keep-alive
+    [Content-Length] => 237
+    [User-Agent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36 OPR/88.0.0.0
+    [Content-Type] => application/json
+    [Accept] => */*
+    [Origin] => http://192.168.1.67
+    [Referer] => http://192.168.1.67/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate
+    [Accept-Language] => es-US,es;q=0.9,en-us;q=0.8,en;q=0.7
+    [Cookie] => PHPSESSID=jlu2v3r9m0la3kajfgto4aadcq
+)
+
+[08-Aug-2025 06:21:01 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"transferencia","items":[{"id_producto":1,"nombre_producto":"Modelo Especial Media","cantidad":1,"precio_unitario":40,"notas":""}],"total":40,"concepto":"Pedido de 1 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:21:01 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => transferencia
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 1
+                    [nombre_producto] => Modelo Especial Media
+                    [cantidad] => 1
+                    [precio_unitario] => 40
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 40
+    [concepto] => Pedido de 1 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:21:01 Europe/Berlin] Transacción iniciada
+[08-Aug-2025 06:21:01 Europe/Berlin] Preparando query: 
+        INSERT INTO ventas (
+            id_empleado, 
+            id_cliente, 
+            total, 
+            concepto, 
+            detalles, 
+            metodo_pago,
+            fecha
+        ) VALUES (
+            :id_empleado, 
+            :id_cliente, 
+            :total, 
+            :concepto, 
+            :detalles, 
+            :metodo_pago,
+            NOW()
+        )
+[08-Aug-2025 06:21:01 Europe/Berlin] Ejecutando venta con parámetros: Array
+(
+    [:id_empleado] => 1
+    [:id_cliente] => 
+    [:total] => 40
+    [:concepto] => Pedido de 1 productos
+    [:detalles] => Pedido desde la tienda online
+    [:metodo_pago] => transferencia
+)
+
+[08-Aug-2025 06:21:01 Europe/Berlin] Venta insertada con ID: 4
+[08-Aug-2025 06:21:01 Europe/Berlin] Preparando query de detalles: 
+        INSERT INTO detalles_venta (
+            id_venta, 
+            id_producto, 
+            nombre_producto, 
+            cantidad, 
+            precio_unitario, 
+            notas
+        ) VALUES (
+            :id_venta, 
+            :id_producto, 
+            :nombre_producto, 
+            :cantidad, 
+            :precio_unitario, 
+            :notas
+        )
+[08-Aug-2025 06:21:01 Europe/Berlin] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'las_miches.detalles_venta' doesn't exist
+[08-Aug-2025 06:21:01 Europe/Berlin] Realizando rollback...
+[08-Aug-2025 06:21:01 Europe/Berlin] ==== Fin de ejecución ====
+
+[08-Aug-2025 06:21:24 Europe/Berlin] ==== Inicio de ejecución ====
+[08-Aug-2025 06:21:24 Europe/Berlin] Headers recibidos: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 317
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0
+    [sec-ch-ua] => "Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"
+    [Content-Type] => application/json
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/RESTAURANT-BAR/DASHBOARD/MENU.html
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => es-419,es;q=0.9
+)
+
+[08-Aug-2025 06:21:24 Europe/Berlin] Datos recibidos (raw): {"paymentMethod":"tarjeta","items":[{"id_producto":4,"nombre_producto":"Mega Corona","cantidad":1,"precio_unitario":80,"notas":""},{"id_producto":3,"nombre_producto":"Corona Lata","cantidad":1,"precio_unitario":35,"notas":""}],"total":115,"concepto":"Pedido de 2 productos","detalles":"Pedido desde la tienda online"}
+[08-Aug-2025 06:21:24 Europe/Berlin] Datos decodificados: Array
+(
+    [paymentMethod] => tarjeta
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id_producto] => 4
+                    [nombre_producto] => Mega Corona
+                    [cantidad] => 1
+                    [precio_unitario] => 80
+                    [notas] => 
+                )
+
+            [1] => Array
+                (
+                    [id_producto] => 3
+                    [nombre_producto] => Corona Lata
+                    [cantidad] => 1
+                    [precio_unitario] => 35
+                    [notas] => 
+                )
+
+        )
+
+    [total] => 115
+    [concepto] => Pedido de 2 productos
+    [detalles] => Pedido desde la tienda online
+)
+
+[08-Aug-2025 06:21:24 Europe/Berlin] Transacción iniciada
+[08-Aug-2025 06:21:24 Europe/Berlin] Preparando query: 
+        INSERT INTO ventas (
+            id_empleado, 
+            id_cliente, 
+            total, 
+            concepto, 
+            detalles, 
+            metodo_pago,
+            fecha
+        ) VALUES (
+            :id_empleado, 
+            :id_cliente, 
+            :total, 
+            :concepto, 
+            :detalles, 
+            :metodo_pago,
+            NOW()
+        )
+[08-Aug-2025 06:21:24 Europe/Berlin] Ejecutando venta con parámetros: Array
+(
+    [:id_empleado] => 1
+    [:id_cliente] => 
+    [:total] => 115
+    [:concepto] => Pedido de 2 productos
+    [:detalles] => Pedido desde la tienda online
+    [:metodo_pago] => tarjeta
+)
+
+[08-Aug-2025 06:21:24 Europe/Berlin] Venta insertada con ID: 5
+[08-Aug-2025 06:21:24 Europe/Berlin] Preparando query de detalles: 
+        INSERT INTO detalles_venta (
+            id_venta, 
+            id_producto, 
+            nombre_producto, 
+            cantidad, 
+            precio_unitario, 
+            notas
+        ) VALUES (
+            :id_venta, 
+            :id_producto, 
+            :nombre_producto, 
+            :cantidad, 
+            :precio_unitario, 
+            :notas
+        )
+[08-Aug-2025 06:21:24 Europe/Berlin] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'las_miches.detalles_venta' doesn't exist
+[08-Aug-2025 06:21:24 Europe/Berlin] Realizando rollback...
+[08-Aug-2025 06:21:24 Europe/Berlin] ==== Fin de ejecución ====
+

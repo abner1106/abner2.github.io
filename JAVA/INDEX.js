@@ -1,115 +1,90 @@
-// JavaScript para funcionalidades interactivas
-
-// Menu móvil
 document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navMenu = document.querySelector('nav ul');
+    // Elementos interactivos
+    const adminCard = document.getElementById('admin-card');
+    const employeeCard = document.getElementById('employee-card');
+    const adminBtn = document.getElementById('admin-btn');
+    const employeeBtn = document.getElementById('employee-btn');
     
-    mobileMenuBtn.addEventListener('click', function() {
-        navMenu.classList.toggle('show');
-    });
-    
-    // Cerrar menú al hacer clic en un enlace
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('show');
-        });
-    });
-    
-    // Smooth scroll para enlaces de navegación
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-    
-    // Animación de elementos al hacer scroll
-    const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.service-card, .team-image, .about-text');
-        
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.3;
-            
-            if (elementPosition < screenPosition) {
-                element.style.opacity = 1;
-                element.style.transform = 'translateY(0)';
-            }
-        });
-    };
-    
-    // Inicializar estilos para animación
-    const animatedElements = document.querySelectorAll('.service-card, .team-image, .about-text');
-    animatedElements.forEach(element => {
-        element.style.opacity = 0;
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    });
-    
-    // Detectar scroll para animación
-    window.addEventListener('scroll', animateOnScroll);
-    // Ejecutar una vez al cargar la página
-    animateOnScroll();
-    
-    // Formulario de contacto (simulado)
-    const contactForm = document.querySelector('form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-            this.reset();
-        });
+    // Redirecciones (actualizar con tus URLs)
+    const adminRedirect = 'LOGGIN.html'; // Tu URL para admin
+    const employeeRedirect = 'LOGGIN.html';
+    // Efecto para las tarjetas
+    function animateCard(card) {
+        card.style.transform = 'translateY(-5px)';
+        setTimeout(() => {
+            card.style.transform = 'translateY(-15px)';
+        }, 150);
     }
     
-    // Contador de estadísticas
-    const statsSection = document.querySelector('.stats');
-    if (statsSection) {
-        const counters = document.querySelectorAll('.counter');
-        let started = false;
-        
-        const startCounters = function() {
-            if (window.scrollY > statsSection.offsetTop - 500 && !started) {
-                started = true;
-                
-                counters.forEach(counter => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-                    const increment = target / 100;
-                    
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(() => {
-                            // Recursividad para continuar el conteo
-                            const updateCount = function() {
-                                const currentCount = +counter.innerText;
-                                if (currentCount < target) {
-                                    counter.innerText = Math.ceil(currentCount + increment);
-                                    setTimeout(updateCount, 20);
-                                } else {
-                                    counter.innerText = target;
-                                }
-                            };
-                            updateCount();
-                        }, 20);
-                    } else {
-                        counter.innerText = target;
-                    }
-                });
-            }
-        };
-        
-        window.addEventListener('scroll', startCounters);
+    function resetCard(card) {
+        setTimeout(() => {
+            card.style.transform = 'translateY(0)';
+        }, 200);
     }
+    
+    // Eventos para tarjetas
+    adminCard.addEventListener('click', function() {
+        animateCard(this);
+        setTimeout(() => {
+            // Redirección a admin
+            if(adminRedirect) window.location.href = adminRedirect;
+            else console.log('Redirección a admin');
+        }, 300);
+    });
+    
+    employeeCard.addEventListener('click', function() {
+        animateCard(this);
+        setTimeout(() => {
+            // Redirección a empleado
+            if(employeeRedirect) window.location.href = employeeRedirect;
+            else console.log('Redirección a empleado');
+        }, 300);
+    });
+    
+    // Eventos para botones
+    adminBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        animateButton(this);
+        setTimeout(() => {
+            if(adminRedirect) window.location.href = adminRedirect;
+            else console.log('Redirección a admin');
+        }, 300);
+    });
+    
+    employeeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        animateButton(this);
+        setTimeout(() => {
+            if(employeeRedirect) window.location.href = employeeRedirect;
+            else console.log('Redirección a empleado');
+        }, 300);
+    });
+    
+    // Animación de botones
+    function animateButton(btn) {
+        btn.style.transform = 'scale(0.95)';
+        btn.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+        
+        setTimeout(() => {
+            btn.style.transform = 'translateY(-3px) scale(1)';
+            if(btn.classList.contains('employee-card')) {
+                btn.style.boxShadow = '0 8px 25px rgba(0, 170, 255, 0.5)';
+            } else {
+                btn.style.boxShadow = '0 8px 25px rgba(255, 0, 0, 0.5)';
+            }
+        }, 200);
+    }
+    
+    // Efecto hover para móviles
+    loginCards.forEach(card => {
+        card.addEventListener('touchstart', function() {
+            this.style.transform = 'translateY(-15px)';
+        });
+        
+        card.addEventListener('touchend', function() {
+            setTimeout(() => {
+                this.style.transform = 'translateY(0)';
+            }, 300);
+        });
+    });
 });
