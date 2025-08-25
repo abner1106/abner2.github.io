@@ -3,47 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>michES XOXO - Inicio</title>
-    <link rel="stylesheet" href="CSS/INDEX.css">
-    <link rel="icon" type="image/x-icon" href="IMAGES/LOGO_MICHES.png" />
-
+    <title>michES XOXO menu</title>
+    <link rel="stylesheet" href="CSS/MENU.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="IMAGES/LOGO_MICHES.png" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-image">
-                <img src="IMAGES/BAR.jpg" alt="Fondo michES XOXO" class="header-bg">
-                <img src="IMAGES/LOGO_MICHES.png" alt="Logo michES XOXO" class="logo">
+    <div class="menu-container">
+        <!-- Header con logo animado -->
+        <header class="menu-header">
+            <div class="logo-container">
+                <img src="IMAGES/LOGO_MICHES.png" alt="Logo michES XOXO" class="menu-logo">
+                <h1>michES XOXO<span>Menu</span></h1>
+            </div>
+            <div class="cart-icon" id="cart-toggle">
+                <i class="fas fa-cocktail"></i>
+                <span class="cart-count">0</span>
             </div>
         </header>
 
-        <main>
-            <div class="welcome-message">
-                <p>Selecciona tu tipo de acceso</p>
-            </div>
+        <!-- Filtros de categorías -->
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">TODO</button>
+            <button class="filter-btn" data-category="cervezas">CERVEZAS</button>
+            <button class="filter-btn" data-category="drinks">DRINKS</button>
+            <button class="filter-btn" data-category="miches">MICHES</button>
+            <button class="filter-btn" data-category="azulitos">AZULITOS</button>
+            <button class="filter-btn" data-category="tritones">TRITONES</button>
+            <button class="filter-btn" data-category="alimentos">ALIMENTOS</button>
+            <button class="filter-btn" data-category="promos">PROMOS</button>
+        </div>
 
-            <div class="login-options">
-                <div class="login-card admin-card" id="admin-card">
-                    <img src="IMAGES/AMIN.png" alt="Icono administrador" class="custom-icon">
-                    <h2>Administrador</h2>
-                    <p>Acceso completo al sistema</p>
-                    <button id="admin-btn" class="login-btn">Iniciar Sesión</button>
+        <!-- Grid de productos -->
+        <div class="products-grid" id="products-grid">
+            <!-- Los productos se cargarán dinámicamente -->
+        </div>
+
+        <!-- Carrito de compras -->
+        <div class="cart-overlay" id="cart-overlay">
+            <div class="cart-container">
+                <div class="cart-header">
+                    <h2><i class="fas fa-cocktail"></i> TU PEDIDO</h2>
+                    <button class="close-cart" id="close-cart">&times;</button>
                 </div>
-
-                <div class="login-card employee-card" id="employee-card">
-                    <img src="IMAGES/empleado.png" alt="Icono empleado" class="custom-icon">
-                    <h2>Empleado</h2>
-                    <p>Acceso para personal (ventas)</p> 
-                    <button id="employee-btn" class="login-btn">Iniciar Sesión</button>
+                <div class="cart-items" id="cart-items">
+                    <!-- Los items del carrito se cargarán aquí -->
                 </div>
+                <div class="cart-total">
+                    <span>TOTAL:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">CONFIRMAR PEDIDO</button>
             </div>
-        </main>
+        </div>
 
-        <footer>
-            <p>© 2023 <span>michES XOXO</span>. Todos los derechos reservados.</p>
-        </footer>
+        <!-- Efecto de confeti oculto -->
+        <canvas id="confetti-canvas"></canvas>
     </div>
 
-    <script src="JAVA/INDEX.js"></script>
+    <script src="JAVA/MENU.js"></script>
 </body>
 </html>

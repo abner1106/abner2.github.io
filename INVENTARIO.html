@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Las Miches XOXO</title>
+    <link rel="stylesheet" href="CSS/INVENTARIO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-placeholder">
+                <img src="IMAGES/LOGO_MICHES.png" alt="Las Miches XOXO" class="logo" id="logo">
+                <h1 class="title">INVENTARIO <span class="neon-text">XOXO</span></h1>
+            </div>
+            <div class="header-info">
+                <div class="info-box">
+                    <span class="info-label">ÚLTIMA ACTUALIZACIÓN:</span>
+                    <span class="info-value" id="last-update">--/--/---- --:--</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar producto...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="cervezas">Cervezas</button>
+            <button class="filter-btn" data-category="licores">Licores</button>
+            <button class="filter-btn" data-category="refrescos">Refrescos</button>
+            <button class="filter-btn" data-category="ingredientes">Ingredientes</button>
+            <button class="filter-btn" data-category="limpieza">Limpieza</button>
+        </div>
+
+        <main class="inventory-grid" id="inventory-grid">
+            <!-- Los productos del inventario aparecerán aquí -->
+        </main>
+
+        <div class="inventory-summary">
+            <div class="summary-card">
+                <span class="summary-label">Productos en stock</span>
+                <span class="summary-value" id="total-products">0</span>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Productos bajos</span>
+                <span class="summary-value warning" id="low-stock">0</span>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Agotados</span>
+                <span class="summary-value danger" id="out-of-stock">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="JAVA/INVENTARIO.js"></script>
+</body>
+</html>
