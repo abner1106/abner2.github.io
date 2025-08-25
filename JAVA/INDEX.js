@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const employeeBtn = document.getElementById('employee-btn');
     
     // Redirecciones (actualizar con tus URLs)
-    const adminRedirect = 'LOGGIN.html'; // Tu URL para admin
-    const employeeRedirect = 'LOGGIN.html';
+    const adminRedirect = '/RESTAURANT-BAR/LOGGIN.php'; // Tu URL para admin
+    const employeeRedirect = '/RESTAURANT-BAR/LOGGIN.php';
     // Efecto para las tarjetas
     function animateCard(card) {
         card.style.transform = 'translateY(-5px)';
